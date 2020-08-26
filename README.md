@@ -1,11 +1,11 @@
 # MS3_CodingChallenge
 ## Installation
-There must be three files in the specified directory:
+Download all the files from the given repository. There must be three files in the specified directory:
 1. MS3_CodingChallenge.java
 2. sqlite-jdbc-3.20.0.jar
 3. ms3Interview.csv
 
-Once all three files are downloaded open the system's command prompt and compile the program with:
+Once all three files are downloaded, open the system's command prompt and compile the program with:
 * javac MS3_CodingChallenge.java
 
 On the command prompt, run the program with:

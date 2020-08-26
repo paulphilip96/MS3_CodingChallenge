@@ -36,5 +36,5 @@ Besides that, there are print statements on the console to inform the user on th
 3. Finding an efficient way to store valid entries into the SQLite  database. Initially the entires were written to the database all at once in a for loop, however this method took about ~30 seconds to complete. To solve this problem I stored the entries to the database in segments through the 'addBatch()' method which significantly decreased the runtime.
 
 ## Additional Notes
-1. I did not include the output files in this directory to avoid conflicts when running the program. Some system processors will not allow Java while another file with the same filename in the same directory to be created or overwritten. Therefore only the three files needed to execute the program completely are included in this directory.
+1. I did not include the output files in this directory to avoid conflicts when running the program. Some system processors will not allow Java to create or overwrite a file while another file with the same filename in the same directory exists. Therefore only the three files needed to execute the program completely are included in this directory.
 2. I have written comments in my code to explain my thought processes and to simplify code assessment.

@@ -25,7 +25,10 @@ There will be three additional files created in the specified directory:
 2. ms3Interview.log OR ms3Interview.txt (the program outputs the file as ms3Interview.log but some kernels will save the file as ms3Interview.txt which is an alternative way to read a file with a <.log> extension)
 3. ms3Interview-bad.csv
 
-ms3Interview.db stores the valid entries from the original CSV file, ms3Interview.log/ms3Interview.txt stores the statistics of the entries and finally ms3Interview-bad.csv stores the invalid entries from the original CSV file.
+Besides that, there are print statements on the console to inform the user on the program's execution process. Here are details about the output files:
+1. ms3Interview.db stores the valid entries from the original CSV file. 
+2. ms3Interview.log OR ms3Interview.txt stores the statistics of the entries.
+3. ms3Interview-bad.csv stores the invalid entries from the original CSV file.
 
 ## Challenges
 1. Finding an efficient way to parse the large CSV file. It would be optimal to store the entries in an array however it is not recommended to create an array without knowing how many entries there are. To solve this problem, the entries were first stored in a list and then transferred to a 2D-array.

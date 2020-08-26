@@ -32,6 +32,6 @@ ms3Interview.db stores the valid entries from the original CSV file, ms3Intervie
 2. Parsing the CSV file was not as easy as I thought it would be. This is because one of the columns always had a comma within the text. This was a problem because I used a comma delimiter to parse the file. In order to overcome this issue I used a regex command that basically meant: "Parse the contents if and only if there is a comma which is not followed by "iVBOR". It took me awhile to figure out the correct syntax of the regex expression as I have not used regex expressions in awhile but eventually I figured it out.
 3. Finding an efficient way to store valid entries into the SQLite  database. Initially the entires were written to the database all at once in a for loop, however this method took about ~30 seconds to complete. To solve this problem I stored the entries to the database in segments through the 'addBatch()' method which significantly decreased the runtime.
 
-##Additional Notes
+## Additional Notes
 1. I did not include the output files in this directory to avoid conflicts when running the program. Some system processors will not allow Java while another file with the same filename in the same directory to be created or overwritten. Therefore only the three files needed to execute the program completely are included in this directory.
 2. I have written comments in my code to explain my thought processes and to simplify code assessment.
